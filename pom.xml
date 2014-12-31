@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.vaadin.addon</groupId>
     <artifactId>v-leaflet-heat</artifactId>
-    <version>0.6.2-SNAPSHOT</version>
+    <version>0.1-SNAPSHOT</version>
     <name>V-Leaflet-Heat</name>
     
     <properties>
@@ -395,12 +395,6 @@
             <artifactId>junit</artifactId>
             <version>4.10</version>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.peimari</groupId>
-            <artifactId>maddon</artifactId>
-            <version>1.15</version>
         </dependency>
 
     </dependencies>

@@ -1,20 +1,12 @@
 package org.vaadin.addon.leaflet.demoandtestapp;
 
-import com.vaadin.ui.Button;
-import com.vaadin.ui.Button.ClickEvent;
-import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.Component;
-import com.vaadin.ui.HorizontalLayout;
-import com.vaadin.ui.Notification;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import org.vaadin.addon.leaflet.*;
 import org.vaadin.addon.leafletheat.LHeatMapLayer;
-import org.vaadin.addon.leaflet.shared.Point;
-import org.vaadin.addon.leaflet.util.JTSUtil;
 import org.vaadin.addon.leafletheat.Point3D;
 import org.vaadin.addonhelpers.AbstractTest;
-import org.vaadin.maddon.layouts.MHorizontalLayout;
 
 public class BasicHeatTest extends AbstractTest {
 
