@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-gwtcompile</actionName>
+            <displayName>gwtcompile</displayName>
+            <goals>
+                <goal>vaadin:compile</goal>
+            </goals>
+            <properties>
+                <gwt.compiler.force>true</gwt.compiler.force>
+            </properties>
+        </action>
+    </actions>
