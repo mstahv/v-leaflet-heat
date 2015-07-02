@@ -48,7 +48,7 @@ public class LHeatMapLayer extends AbstractLeafletLayer {
      * @param radius
      */
     public void setRadius(int radius) {
-        options.put("radius", 25);
+        options.put("radius", radius);
         markAsDirty();
     }
 
