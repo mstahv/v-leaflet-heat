@@ -5,7 +5,7 @@ import com.google.gwt.core.client.JsArray;
 import com.google.gwt.core.client.JsonUtils;
 import com.vaadin.shared.ui.Connect;
 import org.peimari.gleaflet.client.AbstractJsonOptions;
-import org.peimari.gleaflet.client.ILayer;
+import org.peimari.gleaflet.client.Layer;
 import org.peimari.gleaflet.client.LatLng;
 import org.peimari.gleaflet.heat.client.HeatMapLayer;
 import org.vaadin.addon.leaflet.client.AbstractLeafletLayerConnector;
@@ -42,7 +42,7 @@ public class LHeatLayerConnector extends
     }
 
     @Override
-    public ILayer getLayer() {
+    public Layer getLayer() {
         return layer;
     }
 
