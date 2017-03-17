@@ -9,7 +9,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
-import com.vaadin.data.Container;
 import org.vaadin.addonhelpers.TListUi;
 
 public class SimpleTest extends AbstractTestBenchTest {
@@ -19,18 +18,16 @@ public class SimpleTest extends AbstractTestBenchTest {
         startBrowser();
 
         driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
-        
-        Container listTestClasses = TListUi.listTestClasses();
-        for (Object id : listTestClasses.getItemIds()) {
-			Class clazz = (Class) listTestClasses.getItem(id)
-					.getItemProperty("clazz").getValue();
-			
+
+		java.util.List<TListUi.TestDetails> listTestClasses = TListUi.listTestClasses();
+        for (TListUi.TestDetails testDetail : listTestClasses) {
+			Class clazz = testDetail.getClazz();
+
 			driver.get(BASEURL + clazz.getName() + "?debug");
 			try {
 				WebElement error = driver.findElement(By.className("v-Notification-error"));
 				Assert.fail("Test " + clazz.getName() + " has client side exception");
-			} catch (NoSuchElementException e) {
-				continue;
+			} catch (NoSuchElementException ignored) {
 			}
 			
 		}
