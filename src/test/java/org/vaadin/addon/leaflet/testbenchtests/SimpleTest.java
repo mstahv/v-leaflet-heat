@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 
 import org.vaadin.addonhelpers.TListUi;
 
-public class SimpleTest extends AbstractTestBenchTest {
+public class SimpleTest extends AbstractWebDriverCase {
 
     @Test
     public void checkAllTestsOpenWithoutErrors() throws IOException, AssertionError {

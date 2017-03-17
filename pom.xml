@@ -369,13 +369,6 @@
         <!-- If you have testbench licence, use that instead of raw selenium. Much 
         more robust results -->
 
-        <dependency>
-            <groupId>com.vaadin</groupId>
-            <artifactId>vaadin-testbench</artifactId>
-            <version>4.0.0</version>
-            <scope>test</scope>
-        </dependency>
-
         <!-- Open source alternative to TestBench -->
         <!-- <dependency> -->
         <!-- <groupId>org.seleniumhq.selenium</groupId> -->
